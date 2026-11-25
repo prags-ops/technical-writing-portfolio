@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_configure_outage_alert">
+  <title>Configuring an Automated Outage Alert Threshold</title>
+  <shortdesc>Set custom load and voltage thresholds to trigger automated notifications in the Grid Operations Console.</shortdesc>
+  <taskbody>
+    <prereq>
+      <ul>
+        <li>You must have <b>Grid Administrator</b> or <b>Operations Engineer</b> permissions.</li>
+        <li>The target substation telemetry feed must be active and verified.</li>
+      </ul>
+    </prereq>
+    <context>
+      <p>Use this procedure to configure early-warning alerts when feeder load approaches critical capacity.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Log in to the <b>Grid Operations Console</b> and navigate to <menucascade><uicontrol>Monitoring</uicontrol><uicontrol>Alert Rules</uicontrol></menucascade>.</cmd>
+      </step>
+      <step>
+        <cmd>Click <uicontrol>Create Threshold Rule</uicontrol>.</cmd>
+      </step>
+      <step>
+        <cmd>Select the target <uicontrol>Substation ID</uicontrol> and choose <uicontrol>Transformer Load (%)</uicontrol> as the metric.</cmd>
+      </step>
+      <step>
+        <cmd>Enter <userinput>85</userinput> in the <uicontrol>Warning Threshold</uicontrol> field and <userinput>95</userinput> in the <uicontrol>Critical Threshold</uicontrol> field.</cmd>
+      </step>
+      <step>
+        <cmd>Select the notification channel (Email, SMS, or Webhook) and click <uicontrol>Save Rule</uicontrol>.</cmd>
+        <stepresult>The alert rule appears in the active rules table with a status of <b>Enabled</b>.</stepresult>
+      </step>
+    </steps>
+    <result>
+      <p>The system now monitors the selected substation and dispatches automated alerts whenever load values exceed the configured thresholds.</p>
+    </result>
+  </taskbody>
+</task>
