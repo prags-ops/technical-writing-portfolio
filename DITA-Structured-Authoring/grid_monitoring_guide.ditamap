@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="grid_monitoring_guide">
+  <title>Enterprise Grid Monitoring Administrator Guide</title>
+  <topicref href="c_grid_load_monitoring.dita" type="concept">
+    <topicref href="t_configure_outage_alert.dita" type="task"/>
+  </topicref>
+</map>
