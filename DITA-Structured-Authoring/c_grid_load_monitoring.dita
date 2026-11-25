@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_grid_load_monitoring">
+  <title>Automated Grid Load Monitoring</title>
+  <shortdesc>Automated grid load monitoring continuously tracks substation voltage, transformer capacity, and feeder load to detect anomalies before service disruptions occur.</shortdesc>
+  <conbody>
+    <p>In enterprise energy management systems, real-time telemetry data is collected from field sensors and Supervisory Control and Data Acquisition (SCADA) endpoints. Operators rely on automated thresholds to identify overload conditions across regional distribution networks.</p>
+    <section>
+      <title>Key Monitoring Parameters</title>
+      <ul>
+        <li><b>Transformer Load Percentage:</b> Measures active power draw against rated transformer capacity.</li>
+        <li><b>Voltage Deviation:</b> Tracks fluctuations outside nominal operating bands (typically ±5%).</li>
+        <li><b>Thermal Stress Index:</b> Estimates equipment overheating risk during peak demand windows.</li>
+      </ul>
+    </section>
+    <note type="important">Threshold configurations are evaluated every 30 seconds. Ensure telemetry polling intervals are synchronized across connected substations.</note>
+  </conbody>
+</concept>
