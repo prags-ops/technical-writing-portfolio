@@ -50,3 +50,35 @@ A successful request returns a `200 OK` status with 10 user records in the **Res
     }
   }
 ]
+```
+## Step 3: Bind Query Output to a Table Widget
+
+1. Select **UI** in the left navigation panel.
+2. Drag a **Table** widget from the widget list onto the canvas.
+3. Select the **Table** widget to open the **Property Pane** on the right.
+4. Locate **Table data** under **Data** and enter `{{get_users.data}}`.
+5. Resize the widget on the canvas to display the columns clearly.
+
+## Verify It Works
+
+Once `{{get_users.data}}` is bound, the **Table** widget renders the user records returned by `get_users`, exposing fields such as **id**, **name**, **username**, and **email**.
+
+![Table widget populated with REST API user records in Appsmith](./images/appsmith-table-output.png)
+
+Enter a query in the **Search...** input above the table to verify client-side filtering across rows.
+
+## Troubleshooting Common Errors
+
+| Error / Symptom | Root Cause | Resolution |
+| :--- | :--- | :--- |
+| **`404 Not Found`** | The endpoint URL has a typo or missing path segment. | Verify the URL is `[https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)` with no extra spaces. |
+| **Table remains empty** | The `get_users` query has not run, or the binding expression is malformed. | Select **Run** on `get_users`, then confirm **Table data** uses `{{get_users.data}}`. |
+| **`CORS / Network Error`** | Appsmith Cloud cannot directly reach an unexposed `localhost` service. | Use a publicly reachable HTTPS endpoint or run Appsmith locally with Docker. |
+
+## Next Steps
+
+* **Support Write Operations:** Add a `POST` API query connected to a form widget to create new records.
+* **Customize Columns:** Use the **Property Pane** under **Columns** to hide, rename, or format specific table columns.
+* **Publish the Application:** Select **Deploy** in the top-right corner to release a shareable build.
+
+
