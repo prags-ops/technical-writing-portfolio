@@ -2,7 +2,7 @@
 
 Welcome to my technical writing portfolio! I am a Computer Applications (BCA) graduate specializing in transforming complex software workflows into clear, user-centric, and structured documentation.
 
-This repository contains **9 curated samples** covering structured DITA XML authoring, SaaS/CRM user guides, REST API reference docs, release notes, troubleshooting workflows, and instructional video storyboards.
+This repository contains **10 curated samples** covering structured DITA XML authoring, SaaS/CRM user guides, REST API reference docs, release notes, troubleshooting workflows, and instructional video storyboards.
 
 ## Portfolio Samples
 
@@ -24,3 +24,7 @@ This repository contains **9 curated samples** covering structured DITA XML auth
 ### Instructional Design & Conceptual Content
 - [Tutorial Video Script & Storyboard: Adding Contacts in NexaCRM](./Multimedia-and-Scripts) — Timecoded audio-visual script and UI callout storyboard for a 2m 45s product walkthrough video.
 - [Beginner's Guide: What Is CRM Software?](./Conceptual-Articles) — Educational overview explaining core CRM building blocks (Leads, Contacts, Organizations, Deals, and Pipelines).
+
+### Real-World SaaS Quickstart Guides
+
+* [Quickstart: Integrate a REST API and Bind Data to a Table in Appsmith](Real-World-SaaS-Quickstart/appsmith-rest-api-quickstart.md) — Step-by-step developer quickstart covering a `GET` REST API query, `{{get_users.data}}` table binding, JSON payload inspection, and error troubleshooting.
